@@ -1,0 +1,19 @@
+<?php
+
+session_start(); //sesion anonima
+
+/*
+
+if(isset($_SESSION['time'])){
+	if($_SESSION['time'] > (time() + 60)){
+		session_destroy();
+	}
+} else {
+	$_SESSION['time'] = time();
+}
+
+echo time();
+
+*/
+
+
