@@ -25,4 +25,38 @@
 </head>
 
 <body <?php body_class(); ?>>
+<div class="cenefa">
+    <div class="container">
+    <?php wp_nav_menu( array( 'theme_location' => 'cenefa-menu' ) ); ?>
+    </div>
+</div>
+  <header class="content_header">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-1 logo_home">
+			<?php if( get_field('logotipo_summit', 'option') ): ?>
+
+				<img src="<?php the_field('logotipo_summit', 'option'); ?>" />
+
+			<?php endif; ?>
+        
+        
+        
+        </div>
+               <div class="col-md-3"></div>
+        <div class="col-md-8">
+          <div class="content_slogan">
+            <div class="punta_izq_slogan"></div>
+            <div class="centro_slogan"><?php the_field('bajada', 'option'); ?></div>
+            <div class="punta_derecha_slogan">2016</div>
+          </div>
+         
+          <!-- Nav -->
+          <nav class="menu-nav">
+             <?php wp_nav_menu( array( 'theme_location' => 'header-menu' ) ); ?>
+          </nav><!-- End Nav -->
+        </div>
+      </div>
+    </div>
+  </header>
 

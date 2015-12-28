@@ -184,3 +184,17 @@ function if_categoty($categoria_a_buscar){
 function url_actual(){
 	echo $_SERVER["REQUEST_SCHEME"] . '://' . $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"];
 }
+
+add_action('acf/register_fields', 'my_register_fields');
+
+function my_register_fields()
+{
+    include_once('acf-date_time_picker/acf-date_time_picker.php');
+}
+
+function register_my_menu() {
+  register_nav_menu('header-menu',__( 'Header Menu' ));
+  register_nav_menu('cenefa-menu',__( 'Cenefa Menu' ));
+}
+add_action( 'init', 'register_my_menu' );
+

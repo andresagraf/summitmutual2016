@@ -1,28 +1,4 @@
-  <header class="content_header">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-1 logo_home"><img src="<?php echo get_template_directory_uri(); ?>/images/logo_summit_2016.png"  alt=""/></div>
-        <div class="col-md-3"></div>
-        <div class="col-md-8">
-          <div class="content_slogan">
-            <div class="punta_izq_slogan"></div>
-            <div class="centro_slogan">TENDENCIAS MUNDIALES Y BUENAS PRÁCTICAS EN SEGURIDAD Y SALUD EN EL TRABAJO</div>
-            <div class="punta_derecha_slogan">2016</div>
-          </div>
-          <!-- Nav -->
-          <nav class="menu-nav">
-            <ul>
-              <li><a class="active" href="#">Programa</a></li>
-              <li><a href="#">Speakers</a></li>
-              <li><a href="#">Concurso</a></li>
-              <li><a href="#">Auspiciadores</a></li>
-              <li><a href="#">Ubicación</a></li>
-            </ul>
-          </nav><!-- End Nav -->
-        </div>
-      </div>
-    </div>
-  </header><!-- End Header-->
+<!-- End Header-->
   
   
     <!-- Slider -->
@@ -61,3 +37,12 @@
       </div>
     </div>
   </section><!-- End Slider-->
+ 
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 

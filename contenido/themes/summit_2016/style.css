@@ -54,8 +54,29 @@ Tags:
 
 }
 
-f
 /*header*/
+
+
+.cenefa {
+	background: #3D948C;
+	height:35px;
+	color:#fff;
+	width:100%;
+
+}
+
+.cenefa ul li  {
+	float:right;
+	list-style-type:none;
+	margin-right:10px;
+
+}
+
+
+.cenefa a {
+	color:#fff;
+	text-align:right;
+}
 
 .content_header {
     padding-top: 25px;
@@ -288,7 +309,6 @@ h4.tit_presentacion {
 	  filter: none;
       -webkit-filter: grayscale(0);
       -webkit-transform: scale(1.01);
-	
 		-webkit-transition: all 400ms ease;
  	-moz-transition: all 400ms ease;
  	-o-transition: all 400ms ease;
@@ -350,8 +370,11 @@ h4.tit_presentacion {
     padding-top: 39px;
 	}
 .redes_sociales {
-    float: right;
-    padding-top: 51px;
+    /* float: right; */
+    padding-top: 6px;
+    margin-left: auto;
+    margin-right: auto;
+    display: table;
 }
 
 .redes_sociales img {

@@ -13,12 +13,22 @@
 .menu-nav ul li a{
     display: block;
     text-align: center;
-    padding: 0;
     font-family: 'EagleBook';
     padding: 30px 3%;
 }
-.active{
+
+.menu-nav .current_page_item a, .menu-nav a:hover {
     border-top: 4px solid;
+    padding-top: 9px;
+    text-decoration: none;
+    /* margin-top: 4px; */
+}
+
+
+.footer_gris .current_page_item a, .footer_gris a:hover{
+    border-bottom: 2px solid;
+	padding-bottom:3px;
+	text-decoration:none;
 }
 
 /* -- Que es summit -- */
@@ -41,7 +51,6 @@
     position: absolute;
     height: 100%;
     top: 0;
-    z-index: 1;
     right: 0;
     z-index: 2;
 }
@@ -451,11 +460,16 @@
 
 /* -- Footer -- */
 
-.fot-menu-1, .fot-menu-2{
-    float: left;
-    width: 50%;
-    list-style-type: none;
+
+.fot-menu-1, .fot-menu-2 {
+    /* float: left; */
+    /* width: 50%; */
+
 }
+
+.fot-menu-1 ul li, .fot-menu-2  ul li {
+	    list-style-type: none;
+	}
 
 .fot-menu-1, .fot-menu-2{
     color: #fff;
@@ -464,7 +478,15 @@
     height: 200px;
     margin: 50px 0;
 }
-.fot-menu-1 h6, .fot-menu-2 h6{
+
+.fot-menu-3{
+    color: #fff;
+    padding: 0;
+    height: 200px;
+    margin: 50px 0;
+}
+
+.footer_gris h6{
     color: #398E81;
     font-size: 20px;
 }
@@ -478,9 +500,10 @@
 .fot-menu-1{
     padding-left: 80px;
 }
-.fot-menu-2{
+.fot-menu-2 h6, .fot-menu-3 h6{
     padding-left: 70px;
 }
-.fot-menu-2 li{
-    width: 150px;
-}
+
+.fot-menu-2 p {
+	padding:10px 15px 10px 15px;
+	}
