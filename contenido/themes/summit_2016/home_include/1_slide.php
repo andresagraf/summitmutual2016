@@ -2,6 +2,31 @@
   
   
     <!-- Slider -->
+    
+        					<?php while( have_rows('redes_sociales', 'option') ): the_row(); 
+                    
+                            // vars
+                            $image2 = get_sub_field('imagen_red_social_home', 'option');
+                            $content2 = get_sub_field('titulo_red_social', 'option');
+                            $link2 = get_sub_field('direccion_red_social', 'option');
+                    
+                            ?>
+                    
+                    
+                               <?php if( $link2 ): ?>
+                                    <a href="<?php echo $link2; ?>" target="_blank">
+                                <?php endif; ?>
+                   
+                                    <img src=" <?php echo $image2; ?>" alt="" />
+                    
+                                <?php if( $link2 ): ?>
+                                    </a>
+                                <?php endif; ?>
+                    
+                    
+
+                    
+                        <?php endwhile; ?>
   <section>
     <div class="wide-container">
       <div id="carouel">
@@ -14,9 +39,14 @@
                     <h1>MUTUAL<br>SUMMIT<br><span>2016</span></h1>
                   </div>
                   <div class="col-md-6 timming">
-                    <span class="fecha">24 Mayo</span>
-                    <span class="fecha">9:00 hrs.</span>
-                    <span class="fecha">Santiago</span>
+                    <span class="fecha"><?php
+$format = "d F";
+$timestamp = get_field('fecha_del_evento', 'option');
+echo date_i18n($format, $timestamp);
+?></span>
+
+                    <span class="fecha"><?php $format = "g:i"; $timestamp = get_field('fecha_del_evento', 'option'); echo date_i18n($format, $timestamp); ?> hrs.</span>
+                    <span class="fecha"> <?php the_field('ciudad_summit', 'option'); ?></span>
                     <ul id="example" class="contador">
                       <li><span class="days">00</span><p class="days_text">Días</p></li>
                       <li class="seperator">:</li>
@@ -36,6 +66,7 @@
         </ul>
       </div>
     </div>
+
   </section><!-- End Slider-->
  
 
