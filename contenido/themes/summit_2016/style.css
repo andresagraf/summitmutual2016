@@ -741,3 +741,94 @@ h4.tit_presentacion {
 .gallery-caption {
 	display: block;
 }
+
+
+/*páginas interiores*/
+
+.cabecera_pagina_interior {
+    width: 100%;
+    height: 410px;
+    overflow: hidden;
+    /*margin-bottom: 200px;*/
+    position: relative;
+
+}
+
+.cabecera_pagina_interior .imagen_pagina {
+    position:absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    max-width: none;
+    height: auto;
+    width: 100%;
+	}
+
+.cabecera_pagina_interior .imagen_pagina {
+    -webkit-filter: contrast(1.7);
+    filter:  contrast(1.7);
+}
+
+
+.fx_pag_interiores {
+	width:100%;
+	height:410px;
+	overflow:hidden;
+	
+	}
+
+.cont_txt_tit_pag {
+	z-index:300;
+	position: absolute;
+	text-align:center;
+	}
+
+.texto_slider2 {
+    font-family: 'zona_probold';
+    color: #fff;
+    z-index: 400;
+    position: relative;
+    text-align: center;
+    margin-top: 164px;
+}
+
+.fx_slider2 {
+    z-index: 200;
+    top: 0;
+    width: 100%;
+    height: 411px;
+    position: absolute;
+    overflow: hidden;
+}
+
+.fx_slider2 img {
+	min-width:100%;
+	height:auto;
+	/*    -webkit-filter: contrast(-1.7);
+    filter: contrast(4);*/
+	}
+
+.caja-dia {
+    background-color: #71AFD8;
+    color: #fff;
+    text-align: center;
+    padding: 30PX;
+    font-family: 'zona_probold';
+    position: relative;
+    font-size: 25PX;
+    margin-top: -55px;
+    z-index: 400;
+    height: 100px;
+}
+
+.caja-charlas-dia {
+	width:100%;
+	border-bottom: 1px solid #DCDCDC;
+	border-left: 1px solid #DCDCDC;
+	border-right: 1px solid #DCDCDC;
+	min-height:400px;
+	margin-bottom:100px;
+	padding-top:20px;
+
+
+	}
