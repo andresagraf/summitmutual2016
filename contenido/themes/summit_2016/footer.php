@@ -104,5 +104,25 @@
         inherit_width_from: '.wide-container',
         inherit_height_from: '.wide-container'
 });
+$( document ).ready(function() {
+
+$('.listado_mesas .charla').each( function( index ) {
+    
+   $(this).addClass('charla-' + index);
+    
+});
+
+$('.listado_mesas2 .charla').each( function( index ) {
+    
+   $(this).addClass('charla-' + index);
+    
+});
+$(".charla_dia .hora_charla:even").addClass("reloj_verde");
+$(".charla_dia .hora_charla:odd").addClass("reloj_naranjo");
+
+$(".caja_auspicios .titulo:even").addClass("titulo1");
+$(".caja_auspicios .titulo:odd").addClass("titulo2");
+
+});
 	</script>
 
