@@ -1254,4 +1254,85 @@ h1.titulo_auspiciadores {
 	}				
 	
 
+/*UBICACIÓN*/
+
+.cabecera_pagina_interior_ubicacion {
+    width: 100%;
+    height: 251px;
+    overflow: hidden;
+    position: relative;
+}
+
+.cabecera_pagina_interior_ubicacion .imagen_pagina {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    max-width: none;
+    height: auto;
+    width: 100%;
+}
+
+.cabecera_pagina_interior_ubicacion img {
+	opacity:0.7;
+	}
+
+.texto_slider3 {
+    font-family: 'zona_probold';
+    color: #fff;
+    z-index: 400;
+    position: relative;
+    text-align: right;
+    margin-top: 105px;
+}
+.cont_comollegar {
+	height:340px;
+	margin-top:25px;
+
+	}
+
+.content_mapa {
+	margin-bottom:60px;
+	}
+
+.cont_mapa_ubicacion {
+		height:340px;
+		margin-top:40px;
+	}
+
+.cont_comollegar h2 {
+	font-family: 'zona_probold';
+    color: #3C948B;
+	text-align:left;
+	font-weight:normal;
+	font-size:25px;
+	margin-top:0px;
+	}
+
+.contenidos_llegar {
+    HEIGHT: 65PX;
+}
+
+.contenidos_llegar strong {
+	font-family: 'Lato', Arial, serif;
+	font-size:13px;	
+	color:#000000;
+	
+	}
+
+.contenidos_llegar p {
+		font-family: 'Lato', Arial, serif;
+	font-size:13px;	
+	color:#686868;
+	
+	}
+
+.contenidos_enverde {
+	background-color:#3C948B;
+	height:305px;
+	margin-bottom:40px;
+	
+	
+	
+	}
 
