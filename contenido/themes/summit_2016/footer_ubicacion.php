@@ -74,7 +74,7 @@
       </div>
     </div>
     <div class="footer_verde">
-      <div class="container">    <?php the_field('fecha_del_evento', 'option'); ?> © 2016 <?php the_field('texto_footer', 'option'); ?> <!--SUMMIT CHILE | Todos los Derechos Reservados--> </div>
+      <div class="container">© 2016 <?php the_field('texto_footer', 'option'); ?> <!--SUMMIT CHILE | Todos los Derechos Reservados--> </div>
     </div>
   </footer><!-- End Footer-->
 </body>
