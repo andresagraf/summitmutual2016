@@ -34,17 +34,18 @@
     <div class="container">
       <div class="row">
         <div class="col-md-1 logo_home">
+			<a href="<?php get_home_url(); ?>/">
 			<?php if( get_field('logotipo_summit', 'option') ): ?>
 
 				<img src="<?php the_field('logotipo_summit', 'option'); ?>" />
 
 			<?php endif; ?>
-        
+        </a>
         
         
         </div>
-               <div class="col-md-3"></div>
-        <div class="col-md-8">
+               <div class="col-md-2"></div>
+        <div class="col-md-9">
           <div class="content_slogan">
             <div class="punta_izq_slogan"></div>
             <div class="centro_slogan"><?php the_field('bajada', 'option'); ?></div>

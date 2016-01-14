@@ -198,3 +198,42 @@ function register_my_menu() {
 }
 add_action( 'init', 'register_my_menu' );
 
+
+/*categorias calendario*/
+
+/*************************************************************************************/
+
+add_action( 'init', 'create_book_taxonomies', 0 );
+function create_book_taxonomies() {
+
+	$labels = array(
+		'name'              => _x( 'Dias', 'taxonomy general name' ),
+		'singular_name'     => _x( 'Dia', 'taxonomy singular name' ),
+		'search_items'      => __( 'Buscar Dias' ),
+		'all_items'         => __( 'All Dias' ),
+		'parent_item'       => __( 'Parent Dia' ),
+		'parent_item_colon' => __( 'Parent Dia:' ),
+		'edit_item'         => __( 'Edit Dia' ),
+		'update_item'       => __( 'Update Dia' ),
+		'add_new_item'      => __( 'Add New Dia' ),
+		'new_item_name'     => __( 'New Dia Name' ),
+		'menu_name'         => __( 'Dia' ),
+	);
+
+	$args = array(
+		'hierarchical'      => true,
+		'labels'            => $labels,
+		'show_ui'           => true,
+		'show_admin_column' => true,
+		'query_var'         => true,
+		'rewrite'           => array( 'slug' => 'dia' ),
+	);
+
+	register_taxonomy( 'dia', array( 'calendario' ), $args );
+
+
+};
+
+add_image_size( 'speaker-listado', 130, 130, true ); // Hard Crop Mode
+add_image_size( 'speaker-single', 303, 339, true ); // Soft Crop Mode
+add_image_size( 'speaker-mischarlas', 310, 363 , true); // Unlimited Height Mode

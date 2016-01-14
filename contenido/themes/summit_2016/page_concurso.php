@@ -4,7 +4,7 @@
  */
 
 get_header(); ?>
-
+<?php while ( have_posts() ) : the_post();?>
 <section>
         <div class="container">
             <div class="row">
@@ -13,10 +13,9 @@ get_header(); ?>
                     <div class="texto_concurso">
                     	<div class="col-md-3"></div>
                     	<div class="col-md-7">
-                            <h1>Participa por una<br>
-                            experiencia</h1>
-                            <span>SUMMIT 2016</span>
-                            <p>Sé parte de MUTUAL 2016 y cuéntanos que temas te gustaría ver durante las charlas. Las propuestas más innovadoras podrán ganar grandes premios</p>
+                        <?php the_field( "titulo_summit" ); ?>
+                        <span>Summit 2016</span>
+                        <?php the_field( "bajada" ); ?>
                         </div>
                         
                     </div>
@@ -45,27 +44,11 @@ get_header(); ?>
             <div class="col-md-2"></div>
 				 <div class="col-md-8">
                 <h3 class="tit_bases_concurso">BASES DEL CONCURSO</h3>
-                <ul>
-               		<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat urna sit amet finibus convallis.</li> 	
-               		<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat urna sit amet finibus convallis.</li> 	
-               		<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat urna sit amet finibus convallis.</li> 	
-               		<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat urna sit amet finibus convallis.</li> 	
-               		<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat urna sit amet finibus convallis.</li> 	
-               		<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat urna sit amet finibus convallis.</li> 	
-               		<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat urna sit amet finibus convallis.</li>
-               		<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat urna sit amet finibus convallis.</li> 	
-               		<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat urna sit amet finibus convallis.</li> 	
-               		<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat urna sit amet finibus convallis.</li> 	
-               		<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat urna sit amet finibus convallis.</li> 	
-               		<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat urna sit amet finibus convallis.</li> 	
-              		<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat urna sit amet finibus convallis.</li>
-               		<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat urna sit amet finibus convallis.</li>
-               		<li>Lorem ipsum dolor sit amet, consectetur adipiscing elit. In feugiat urna sit amet finibus convallis.</li> 	                                         	                                                                                                     	                                                                                                    
-                </ul>
+               <?php the_content(); ?>
                 </div>
             </div>
         </div>
 </section>
-
+                      	<?php endwhile; wp_reset_query(); ?>
 <?php
 get_footer();

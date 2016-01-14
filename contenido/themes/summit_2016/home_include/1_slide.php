@@ -2,7 +2,11 @@
   
   
     <!-- Slider -->
-    
+                        
+  <section>
+    <div class="wide-container">
+      <div id="carouel">
+          <ul class="content_redes_home">
         					<?php while( have_rows('redes_sociales', 'option') ): the_row(); 
                     
                             // vars
@@ -14,22 +18,28 @@
                     
                     
                                <?php if( $link2 ): ?>
-                                    <a href="<?php echo $link2; ?>" target="_blank">
+                                    <li><a href="<?php echo $link2; ?>" target="_blank">
                                 <?php endif; ?>
                    
                                     <img src=" <?php echo $image2; ?>" alt="" />
                     
                                 <?php if( $link2 ): ?>
-                                    </a>
+                                    </a></li>
                                 <?php endif; ?>
                     
                     
 
                     
                         <?php endwhile; ?>
-  <section>
-    <div class="wide-container">
-      <div id="carouel">
+</ul>
+           <div class="content_form_inscripcion">
+           		<a href="/formulario">
+                <div class="boton_form_inscr">
+                INSCRÍBETE<br>AQUÍ
+                
+                </div>
+                </a>
+           </div>
         <ul class="slides-container">
           <li>
             <div class="container">
@@ -38,6 +48,7 @@
                   <div class="col-md-5 titulo_summit">
                     <h1>MUTUAL<br>SUMMIT<br><span>2016</span></h1>
                   </div>
+
                   <div class="col-md-6 timming">
                     <span class="fecha"><?php
 $format = "d F";
